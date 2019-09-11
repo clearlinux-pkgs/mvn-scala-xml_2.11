@@ -4,11 +4,13 @@
 #
 Name     : mvn-scala-xml_2.11
 Version  : 1
-Release  : 1
+Release  : 2
 URL      : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-sources.jar
 Source0  : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-sources.jar
-Source1  : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
-Source2  : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom
+Source1  : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar
+Source2  : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.pom
+Source3  : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+Source4  : https://repo.maven.apache.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -34,11 +36,17 @@ data components for the mvn-scala-xml_2.11 package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-sources.jar
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom
 
 
 %files
@@ -46,6 +54,8 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/scala-lang/modules/
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar
+/usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.pom
 /usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-sources.jar
 /usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar
 /usr/share/java/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom
